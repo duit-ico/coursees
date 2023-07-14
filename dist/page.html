@@ -1,0 +1,200 @@
+<!DOCTYPE html>
+<html lang="ru">
+
+<head>
+  <meta charset="UTF-8">
+  <meta http-equiv="X-UA-Compatible" content="IE=edge">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.0/dist/css/bootstrap.min.css" rel="stylesheet" integrity="sha384-9ndCyUaIbzAi2FUVXJi0CjmCapSmO7SnpJef0486qhLnuZ2cdeRhO02iuK6FUUVM" crossorigin="anonymous">
+  <link rel="stylesheet" href="css/style.min.css">
+  <title>Document</title>
+</head>
+
+<body>
+
+  <header>
+    <nav class="navbar navbar-expand-md flex-column  align-item-start" id="sidebar">
+      <div class="fix-w w-100">
+        <div class="navbar-top mt-md-4 d-flex justify-content-between w-100 px-3">
+          <a href="#" class="navbar-brand mx-sm-auto">
+            <img src="../images/logo.svg" alt="logo">
+          </a>
+          <div class="navbar-toggle__block navbar-toggler">
+            <span class="me-2 small-text">Меню</span>
+            <button class="navbar-toggler__btn" type="button" data-bs-toggle="collapse" data-bs-target="#navbarSupportedContent" aria-controls="navbarSupportedContent" aria-expanded="false" aria-label="Toggle navigation">
+              <span class="navbar-toggler-icon"></span>
+            </button>
+          </div>
+        </div>
+      </div>
+      
+      <div class="collapse navbar-collapse mt-md-4 pt-md-5" id="navbarSupportedContent">
+      <ul class="navbar-nav d-flex flex-column ms-lg-5 w-100" id="menu">
+        <div class="block ms-xl-5">
+          <li class="nav-item dropdown w-100">
+            <a href="#cabinet" class="nav-link d-flex w-100" data-bs-toggle="collapse">
+              <svg width="24" height="24" viewBox="0 0 24 24" fill="none" xmlns="http://www.w3.org/2000/svg">
+                <path d="M12 12C14.7614 12 17 9.76142 17 7C17 4.23858 14.7614 2 12 2C9.23858 2 7 4.23858 7 7C7 9.76142 9.23858 12 12 12Z" stroke="#7F7F7F" stroke-width="1.5" stroke-linecap="round" stroke-linejoin="round"/>
+                <path d="M20.59 22C20.59 18.13 16.74 15 12 15C7.26003 15 3.41003 18.13 3.41003 22" stroke="#7F7F7F" stroke-width="1.5" stroke-linecap="round" stroke-linejoin="round"/>
+              </svg> 
+              <span>Кабинет</span>
+            </a>
+            <ul class="nav collapse flex-column w-100 ps-4" id="cabinet" data-bs-parent="#menu">
+              <li class="pt-3">
+                <a href="#" class="dropdown-item">Ввод</a>
+              </li>
+              <li class="pt-3">
+                <a href="#" class="dropdown-item">Вывод</a>
+              </li>
+              <li class="pt-3">
+                <a href="#" class="dropdown-item">Перевод</a>
+              </li>
+            </ul>
+          </li>
+          <li class="nav-item dropdown w-100 mt-md-4">
+            <a href="#courses" class="nav-link d-flex w-100" data-bs-toggle="collapse">
+              <svg width="24" height="24" viewBox="0 0 24 24" fill="none" xmlns="http://www.w3.org/2000/svg">
+                <path d="M22 16.7402V4.67019C22 3.47019 21.02 2.58019 19.83 2.68019H19.77C17.67 2.86019 14.48 3.93019 12.7 5.05019L12.53 5.16019C12.24 5.34019 11.76 5.34019 11.47 5.16019L11.22 5.01019C9.44 3.90019 6.26 2.84019 4.16 2.67019C2.97 2.57019 2 3.47019 2 4.66019V16.7402C2 17.7002 2.78 18.6002 3.74 18.7202L4.03 18.7602C6.2 19.0502 9.55 20.1502 11.47 21.2002L11.51 21.2202C11.78 21.3702 12.21 21.3702 12.47 21.2202C14.39 20.1602 17.75 19.0502 19.93 18.7602L20.26 18.7202C21.22 18.6002 22 17.7002 22 16.7402Z" stroke="#7F7F7F" stroke-width="1.5" stroke-linecap="round" stroke-linejoin="round"/>
+                <path d="M12 5.49023V20.4902" stroke="#7F7F7F" stroke-width="1.5" stroke-linecap="round" stroke-linejoin="round"/>
+                <path d="M7.75 8.49023H5.5" stroke="#7F7F7F" stroke-width="1.5" stroke-linecap="round" stroke-linejoin="round"/>
+                <path d="M8.5 11.4902H5.5" stroke="#7F7F7F" stroke-width="1.5" stroke-linecap="round" stroke-linejoin="round"/>
+                </svg>
+              <span>Курсы</span>
+            </a>
+            <ul class="nav collapse flex-column w-100 ps-4" id="courses" data-bs-parent="#menu">
+              <li class="pt-3">
+                <a href="#" class="dropdown-item">Ввод</a>
+              </li>
+              <li class="pt-3">
+                <a href="#" class="dropdown-item">Вывод</a>
+              </li>
+              <li class="pt-3">
+                <a href="#" class="dropdown-item">Перевод</a>
+              </li>
+            </ul>
+          </li>
+          <li class="nav-item dropdown w-100 mt-md-4">
+            <a href="#volume" class="nav-link d-flex w-100" data-bs-toggle="collapse">
+              <svg width="24" height="24" viewBox="0 0 24 24" fill="none" xmlns="http://www.w3.org/2000/svg">
+                <path d="M21.6601 10.44L20.6801 14.62C19.8401 18.23 18.1801 19.69 15.0601 19.39C14.5601 19.35 14.0201 19.26 13.4401 19.12L11.7601 18.72C7.59006 17.73 6.30006 15.67 7.28006 11.49L8.26006 7.30001C8.46006 6.45001 8.70006 5.71001 9.00006 5.10001C10.1701 2.68001 12.1601 2.03001 15.5001 2.82001L17.1701 3.21001C21.3601 4.19001 22.6401 6.26001 21.6601 10.44Z" stroke="#7F7F7F" stroke-width="1.5" stroke-linecap="round" stroke-linejoin="round"/>
+                <path d="M15.06 19.3901C14.44 19.8101 13.66 20.1601 12.71 20.4701L11.13 20.9901C7.15998 22.2701 5.06997 21.2001 3.77997 17.2301L2.49997 13.2801C1.21997 9.3101 2.27997 7.2101 6.24997 5.9301L7.82997 5.4101C8.23997 5.2801 8.62997 5.1701 8.99997 5.1001C8.69997 5.7101 8.45997 6.4501 8.25997 7.3001L7.27997 11.4901C6.29997 15.6701 7.58998 17.7301 11.76 18.7201L13.44 19.1201C14.02 19.2601 14.56 19.3501 15.06 19.3901Z" stroke="#7F7F7F" stroke-width="1.5" stroke-linecap="round" stroke-linejoin="round"/>
+                </svg>
+              <span>Тома</span>
+            </a>
+            <ul class="nav collapse flex-column w-100 ps-4" id="volume" data-bs-parent="#menu">
+              <li class="pt-3">
+                <a href="#" class="dropdown-item">Ввод</a>
+              </li>
+              <li class="pt-3">
+                <a href="#" class="dropdown-item">Вывод</a>
+              </li>
+              <li class="pt-3">
+                <a href="#" class="dropdown-item">Перевод</a>
+              </li>
+            </ul>
+          </li>
+          <li class="nav-item dropdown w-100 mt-md-4">
+            <a href="#team" class="nav-link d-flex w-100" data-bs-toggle="collapse">
+              <svg width="24" height="24" viewBox="0 0 24 24" fill="none" xmlns="http://www.w3.org/2000/svg">
+                <path d="M18 7.16C17.94 7.15 17.87 7.15 17.81 7.16C16.43 7.11 15.33 5.98 15.33 4.58C15.33 3.15 16.48 2 17.91 2C19.34 2 20.49 3.16 20.49 4.58C20.48 5.98 19.38 7.11 18 7.16Z" stroke="#7F7F7F" stroke-width="1.5" stroke-linecap="round" stroke-linejoin="round"/>
+                <path d="M16.9699 14.4402C18.3399 14.6702 19.8499 14.4302 20.9099 13.7202C22.3199 12.7802 22.3199 11.2402 20.9099 10.3002C19.8399 9.59016 18.3099 9.35016 16.9399 9.59016" stroke="#7F7F7F" stroke-width="1.5" stroke-linecap="round" stroke-linejoin="round"/>
+                <path d="M5.96998 7.16C6.02998 7.15 6.09998 7.15 6.15998 7.16C7.53998 7.11 8.63998 5.98 8.63998 4.58C8.63998 3.15 7.48998 2 6.05998 2C4.62998 2 3.47998 3.16 3.47998 4.58C3.48998 5.98 4.58998 7.11 5.96998 7.16Z" stroke="#7F7F7F" stroke-width="1.5" stroke-linecap="round" stroke-linejoin="round"/>
+                <path d="M6.99994 14.4402C5.62994 14.6702 4.11994 14.4302 3.05994 13.7202C1.64994 12.7802 1.64994 11.2402 3.05994 10.3002C4.12994 9.59016 5.65994 9.35016 7.02994 9.59016" stroke="#7F7F7F" stroke-width="1.5" stroke-linecap="round" stroke-linejoin="round"/>
+                <path d="M12 14.6302C11.94 14.6202 11.87 14.6202 11.81 14.6302C10.43 14.5802 9.32996 13.4502 9.32996 12.0502C9.32996 10.6202 10.48 9.47021 11.91 9.47021C13.34 9.47021 14.49 10.6302 14.49 12.0502C14.48 13.4502 13.38 14.5902 12 14.6302Z" stroke="#7F7F7F" stroke-width="1.5" stroke-linecap="round" stroke-linejoin="round"/>
+                <path d="M9.08997 17.7804C7.67997 18.7204 7.67997 20.2603 9.08997 21.2003C10.69 22.2703 13.31 22.2703 14.91 21.2003C16.32 20.2603 16.32 18.7204 14.91 17.7804C13.32 16.7204 10.69 16.7204 9.08997 17.7804Z" stroke="#7F7F7F" stroke-width="1.5" stroke-linecap="round" stroke-linejoin="round"/>
+                </svg>
+              <span>Моя команда</span>
+            </a>
+            <ul class="nav collapse flex-column w-100 ps-4" id="team" data-bs-parent="#menu">
+              <li class="pt-3">
+                <a href="#" class="dropdown-item">Ввод</a>
+              </li>
+              <li class="pt-3">
+                <a href="#" class="dropdown-item">Вывод</a>
+              </li>
+              <li class="pt-3">
+                <a href="#" class="dropdown-item">Перевод</a>
+              </li>
+            </ul>
+          </li>
+          <li class="nav-item dropdown w-100 mt-md-4">
+            <a href="#wallet" class="nav-link d-flex w-100" data-bs-toggle="collapse">
+              <svg width="24" height="24" viewBox="0 0 24 24" fill="none" xmlns="http://www.w3.org/2000/svg">
+                <path d="M18.04 13.55C17.62 13.96 17.38 14.55 17.44 15.18C17.53 16.26 18.52 17.05 19.6 17.05H21.5V18.24C21.5 20.31 19.81 22 17.74 22H6.26C4.19 22 2.5 20.31 2.5 18.24V11.51C2.5 9.44001 4.19 7.75 6.26 7.75H17.74C19.81 7.75 21.5 9.44001 21.5 11.51V12.95H19.48C18.92 12.95 18.41 13.17 18.04 13.55Z" stroke="#7F7F7F" stroke-width="1.5" stroke-linecap="round" stroke-linejoin="round"/>
+                <path d="M2.5 12.4098V7.83986C2.5 6.64986 3.23 5.58982 4.34 5.16982L12.28 2.16982C13.52 1.69982 14.85 2.61985 14.85 3.94985V7.74983" stroke="#7F7F7F" stroke-width="1.5" stroke-linecap="round" stroke-linejoin="round"/>
+                <path d="M22.5588 13.9702V16.0302C22.5588 16.5802 22.1188 17.0302 21.5588 17.0502H19.5988C18.5188 17.0502 17.5288 16.2602 17.4388 15.1802C17.3788 14.5502 17.6188 13.9602 18.0388 13.5502C18.4088 13.1702 18.9188 12.9502 19.4788 12.9502H21.5588C22.1188 12.9702 22.5588 13.4202 22.5588 13.9702Z" stroke="#7F7F7F" stroke-width="1.5" stroke-linecap="round" stroke-linejoin="round"/>
+                <path d="M7 12H14" stroke="#7F7F7F" stroke-width="1.5" stroke-linecap="round" stroke-linejoin="round"/>
+              </svg>
+              <span>Кошелёк</span>
+            </a>
+            <ul class="nav collapse flex-column w-100 ps-4" id="wallet" data-bs-parent="#menu">
+              <li class="pt-3">
+                <a href="#" class="dropdown-item">Ввод</a>
+              </li>
+              <li class="pt-3">
+                <a href="#" class="dropdown-item">Вывод</a>
+              </li>
+              <li class="pt-3">
+                <a href="#" class="dropdown-item">Перевод</a>
+              </li>
+            </ul>
+          </li>
+          <li class="nav-item dropdown w-100 mt-md-4">
+            <a href="#exchanger" class="nav-link d-flex w-100" data-bs-toggle="collapse">
+              <svg width="24" height="24" viewBox="0 0 24 24" fill="none" xmlns="http://www.w3.org/2000/svg">
+                <path d="M3.57996 5.16016H17.42C19.08 5.16016 20.42 6.50016 20.42 8.16016V11.4802" stroke="#7F7F7F" stroke-width="1.5" stroke-miterlimit="10" stroke-linecap="round" stroke-linejoin="round"/>
+                <path d="M6.73996 2L3.57996 5.15997L6.73996 8.32001" stroke="#7F7F7F" stroke-width="1.5" stroke-miterlimit="10" stroke-linecap="round" stroke-linejoin="round"/>
+                <path d="M20.42 18.84H6.57996C4.91996 18.84 3.57996 17.5 3.57996 15.84V12.52" stroke="#7F7F7F" stroke-width="1.5" stroke-miterlimit="10" stroke-linecap="round" stroke-linejoin="round"/>
+                <path d="M17.26 22.0002L20.42 18.8402L17.26 15.6802" stroke="#7F7F7F" stroke-width="1.5" stroke-miterlimit="10" stroke-linecap="round" stroke-linejoin="round"/>
+              </svg>
+              <span>P2p обменник</span>
+            </a>
+            <ul class="nav collapse flex-column w-100 ps-4" id="exchanger" data-bs-parent="#menu">
+              <li class="pt-3">
+                <a href="#" class="dropdown-item">Ввод</a>
+              </li>
+              <li class="pt-3">
+                <a href="#" class="dropdown-item">Вывод</a>
+              </li>
+              <li class="pt-3">
+                <a href="#" class="dropdown-item">Перевод</a>
+              </li>
+            </ul>
+          </li>
+        </div>
+        <div class="block ms-xl-5 mb-5">
+          <li class="nav-item d-flex w-100 mt-md-3">
+            <a href="#" class="nav-link d-flex opt">
+              <svg width="24" height="24" viewBox="0 0 24 24" fill="none" xmlns="http://www.w3.org/2000/svg">
+                <path d="M12 15C13.6569 15 15 13.6569 15 12C15 10.3431 13.6569 9 12 9C10.3431 9 9 10.3431 9 12C9 13.6569 10.3431 15 12 15Z" stroke="#7F7F7F" stroke-width="1.5" stroke-miterlimit="10" stroke-linecap="round" stroke-linejoin="round"/>
+                <path d="M2 12.8799V11.1199C2 10.0799 2.85 9.21994 3.9 9.21994C5.71 9.21994 6.45 7.93994 5.54 6.36994C5.02 5.46994 5.33 4.29994 6.24 3.77994L7.97 2.78994C8.76 2.31994 9.78 2.59994 10.25 3.38994L10.36 3.57994C11.26 5.14994 12.74 5.14994 13.65 3.57994L13.76 3.38994C14.23 2.59994 15.25 2.31994 16.04 2.78994L17.77 3.77994C18.68 4.29994 18.99 5.46994 18.47 6.36994C17.56 7.93994 18.3 9.21994 20.11 9.21994C21.15 9.21994 22.01 10.0699 22.01 11.1199V12.8799C22.01 13.9199 21.16 14.7799 20.11 14.7799C18.3 14.7799 17.56 16.0599 18.47 17.6299C18.99 18.5399 18.68 19.6999 17.77 20.2199L16.04 21.2099C15.25 21.6799 14.23 21.3999 13.76 20.6099L13.65 20.4199C12.75 18.8499 11.27 18.8499 10.36 20.4199L10.25 20.6099C9.78 21.3999 8.76 21.6799 7.97 21.2099L6.24 20.2199C5.33 19.6999 5.02 18.5299 5.54 17.6299C6.45 16.0599 5.71 14.7799 3.9 14.7799C2.85 14.7799 2 13.9199 2 12.8799Z" stroke="#7F7F7F" stroke-width="1.5" stroke-miterlimit="10" stroke-linecap="round" stroke-linejoin="round"/>
+                </svg>  
+              <span>Настройки</span>
+            </a>
+          </li>
+          <li class="nav-item d-flex w-100 mt-md-3 exit">
+            <a href="#" class="nav-link d-flex opt nav-item__exit">
+              <svg width="24" height="24" viewBox="0 0 24 24" fill="none" xmlns="http://www.w3.org/2000/svg">
+                <path d="M8.90002 7.56023C9.21002 3.96023 11.06 2.49023 15.11 2.49023H15.24C19.71 2.49023 21.5 4.28023 21.5 8.75023V15.2702C21.5 19.7402 19.71 21.5302 15.24 21.5302H15.11C11.09 21.5302 9.24002 20.0802 8.91002 16.5402" stroke="#7F7F7F" stroke-width="1.5" stroke-linecap="round" stroke-linejoin="round"/>
+                <path d="M15 12H3.62" stroke="#7F7F7F" stroke-width="1.5" stroke-linecap="round" stroke-linejoin="round"/>
+                <path d="M5.85 8.6499L2.5 11.9999L5.85 15.3499" stroke="#7F7F7F" stroke-width="1.5" stroke-linecap="round" stroke-linejoin="round"/>
+                </svg>
+              <span>Выход</span>
+            </a>
+          </li>
+        </div>
+      </ul>
+    </div>
+    </nav>
+
+    <hr class="w-100">
+  </header>
+<section>
+  two page
+</section>
+
+<script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.0/dist/js/bootstrap.bundle.min.js" integrity="sha384-geWF76RCwLtnZ8qwWowPQNguL3RmwHVBC9FhGdlKrxdiJJigb/j/68SIy3Te4Bkz" crossorigin="anonymous"></script>
+<script src="js/main.min.js"></script>
+</body>
+
+</html>
