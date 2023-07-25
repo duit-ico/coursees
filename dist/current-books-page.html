@@ -171,30 +171,333 @@
 
     <hr class="w-100">
   </header>
-<section class="page-name content-section">
-    <div class="container">
-        <div class="container__top d-flex justify-content-between align-items-center">
-            <div class="content-section__top">
-                <h2 class="title">
-                Личный кабинет
-                </h2>
+<section class="current-books-page content-section">
+  <div class="container">
+      <div class="container__top d-flex justify-content-between align-items-center">
+          <div class="content-section__top mr-5">
+              <h2 class="title">
+                Текущие Брони
+              </h2>
+          </div>
+          <div class="tomain-block">
+            <div class="tomain-block__inner d-flex navbar-top">
+              <a href="./" class="d-flex align-items-center">
+                <img src="./images/icons/home-icon.svg" alt="На главную">
+                <span class="small-text ps-2">На главную</span>
+              </a>
             </div>
-            <div class="tomain-block">
-              <div class="tomain-block__inner d-flex navbar-top">
-                <a href="./" class="d-flex align-items-center">
-                  <img src="./images/icons/home-icon.svg" alt="На главную">
-                  <span class="small-text ps-2">На главную</span>
-                </a>
+          </div>
+          
+      </div>
+      <div class="content-section__inner d-flex">
+          <div class="content-section__wrapper mb-3 mb-sm-4 mb-xl-5">
+          
+               <div class="books-page__top d-flex flex-column flex-sm-row align-items-center mb-3 mb-sm-4 mt-4 mt-md-0">
+          
+                 <button class="btn books-page__btn ssmal-text w-100 books-page__btn-active">
+          
+                   Поиск по ID
+          
+                 </button>
+          
+                 <button class="btn books-page__btn ssmal-text w-100">
+          
+                   Мои текущие брони
+          
+                 </button>
+          
+                 <button class="btn books-page__btn ssmal-text w-100">
+          
+                   Сбросить все мои брони
+          
+                 </button>
+          
+               </div>
+          
+            <div class="current-books-page__items">
+              <div class="row m-0 mx-auto" style="gap: 10px;">
+                <div class="col one-book__item p-3">
+                  <div class="one-book__item-top d-flex align-items-center justify-content-between">
+                    <h4 class="one-book__item-level">
+                      Уровень 1
+                    </h4>
+                    <a class="one-book__item-link" href="#">
+                      <span class="small-text p3-1">Перейти</span>
+                      <svg width="19" height="18" viewBox="0 0 19 18" fill="none" xmlns="http://www.w3.org/2000/svg">
+                        <g id="arrow-left">
+                        <path id="Vector" d="M4.5 9H15" stroke="#89C85F" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"/>
+                        <path id="Vector_2" d="M9.75 14.25L15 9L9.75 3.75" stroke="#89C85F" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"/>
+                        </g>
+                      </svg> 
+                    </a>
+                    
+                  </div>
+                </div>
+          
+                <!-- компонент одной карточки (брони) -->
+          
+                
+          
+                  <div class="col one-book__item p-3">
+          
+                    <div class="one-book__item-top d-flex align-items-center justify-content-between">
+          
+                      <h4 class="one-book__item-level">
+          
+                        Уровень 2
+          
+                      </h4>
+          
+                      <a class="one-book__item-link" href="#">
+          
+                        <span class="small-text">Перейти</span>
+          
+                        <svg width="19" height="18" viewBox="0 0 19 18" fill="none" xmlns="http://www.w3.org/2000/svg">
+          
+                          <g id="arrow-left">
+          
+                          <path id="Vector" d="M4.5 9H15" stroke="#89C85F" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"/>
+          
+                          <path id="Vector_2" d="M9.75 14.25L15 9L9.75 3.75" stroke="#89C85F" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"/>
+          
+                          </g>
+          
+                        </svg> 
+          
+                      </a>
+          
+                      
+          
+                    </div>
+          
+                    <div class="one-book__item-content mt-3">
+          
+                
+          
+                      <div class="row mb-4">
+          
+                        <div class="stages__el-box d-flex flex-column align-items-center position-relative">
+          
+                          <span class="stages__num small-text">0</span>
+          
+                          <img class="stages__img my-2" src="./images/avatar.png" alt="avatar">
+          
+                          <span class="stages__status small-text">
+          
+                            Пусто
+          
+                          </span>
+          
+                  
+          
+                        </div>
+          
+                      </div>
+          
+                
+          
+                      <div class="row">
+          
+                        <div class="col d-flex flex-column">
+          
+                          <div class="stages__el d-flex flex-column align-items-center">
+          
+                            <span class="stages__num small-text">0</span>
+          
+                            <img class="stages__img my-2" src="./images/default-avatar.png" alt="avatar">
+          
+                            <span class="stages__status small-text">
+          
+                              Пусто
+          
+                            </span>
+          
+                          </div>
+          
+                        </div>
+          
+                        
+          
+                        <div class="col d-flex flex-column">
+          
+                          <div class="stages__el d-flex flex-column align-items-center">
+          
+                            <span class="stages__num small-text">0</span>
+          
+                            <img class="stages__img my-2" src="./images/default-avatar.png" alt="avatar">
+          
+                            <span class="stages__status small-text">
+          
+                              Пусто
+          
+                            </span>
+          
+                          </div>
+          
+                        </div>
+          
+                      </div>
+          
+                
+          
+                    </div>
+          
+                  </div>
+          
+                
+          
+                  
+          
+                <div class="col one-book__item p-3">
+                  <div class="one-book__item-top d-flex align-items-center justify-content-between">
+                    <h4 class="one-book__item-level">
+                      Уровень 3
+                    </h4>
+                    <a class="one-book__item-link" href="#">
+                      <span class="small-text p3-1">Перейти</span>
+                      <svg width="19" height="18" viewBox="0 0 19 18" fill="none" xmlns="http://www.w3.org/2000/svg">
+                        <g id="arrow-left">
+                        <path id="Vector" d="M4.5 9H15" stroke="#89C85F" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"/>
+                        <path id="Vector_2" d="M9.75 14.25L15 9L9.75 3.75" stroke="#89C85F" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"/>
+                        </g>
+                      </svg> 
+                    </a>
+                    
+                  </div>
+                </div>
+          
+                <div class="col one-book__item p-3">
+                  <div class="one-book__item-top d-flex align-items-center justify-content-between">
+                    <h4 class="one-book__item-level">
+                      Уровень 4
+                    </h4>
+                    <a class="one-book__item-link" href="#">
+                      <span class="small-text p3-1">Перейти</span>
+                      <svg width="19" height="18" viewBox="0 0 19 18" fill="none" xmlns="http://www.w3.org/2000/svg">
+                        <g id="arrow-left">
+                        <path id="Vector" d="M4.5 9H15" stroke="#89C85F" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"/>
+                        <path id="Vector_2" d="M9.75 14.25L15 9L9.75 3.75" stroke="#89C85F" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"/>
+                        </g>
+                      </svg> 
+                    </a>
+                    
+                  </div>
+                </div>
+          
+                <div class="col one-book__item p-3">
+                  <div class="one-book__item-top d-flex align-items-center justify-content-between">
+                    <h4 class="one-book__item-level">
+                      Уровень 5
+                    </h4>
+                    <a class="one-book__item-link" href="#">
+                      <span class="small-text p3-1">Перейти</span>
+                      <svg width="19" height="18" viewBox="0 0 19 18" fill="none" xmlns="http://www.w3.org/2000/svg">
+                        <g id="arrow-left">
+                        <path id="Vector" d="M4.5 9H15" stroke="#89C85F" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"/>
+                        <path id="Vector_2" d="M9.75 14.25L15 9L9.75 3.75" stroke="#89C85F" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"/>
+                        </g>
+                      </svg> 
+                    </a>
+                    
+                  </div>
+                </div>
+          
+                <div class="col one-book__item p-3">
+                  <div class="one-book__item-top d-flex align-items-center justify-content-between">
+                    <h4 class="one-book__item-level">
+                      Уровень 6
+                    </h4>
+                    <a class="one-book__item-link" href="#">
+                      <span class="small-text p3-1">Перейти</span>
+                      <svg width="19" height="18" viewBox="0 0 19 18" fill="none" xmlns="http://www.w3.org/2000/svg">
+                        <g id="arrow-left">
+                        <path id="Vector" d="M4.5 9H15" stroke="#89C85F" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"/>
+                        <path id="Vector_2" d="M9.75 14.25L15 9L9.75 3.75" stroke="#89C85F" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"/>
+                        </g>
+                      </svg> 
+                    </a>
+                    
+                  </div>
+                </div>
+          
+                <div class="col one-book__item p-3">
+                  <div class="one-book__item-top d-flex align-items-center justify-content-between">
+                    <h4 class="one-book__item-level">
+                      Уровень 7
+                    </h4>
+                    <a class="one-book__item-link" href="#">
+                      <span class="small-text p3-1">Перейти</span>
+                      <svg width="19" height="18" viewBox="0 0 19 18" fill="none" xmlns="http://www.w3.org/2000/svg">
+                        <g id="arrow-left">
+                        <path id="Vector" d="M4.5 9H15" stroke="#89C85F" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"/>
+                        <path id="Vector_2" d="M9.75 14.25L15 9L9.75 3.75" stroke="#89C85F" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"/>
+                        </g>
+                      </svg> 
+                    </a>
+                    
+                  </div>
+                </div>
+          
+                <div class="col one-book__item p-3">
+                  <div class="one-book__item-top d-flex align-items-center justify-content-between">
+                    <h4 class="one-book__item-level">
+                      Уровень 8
+                    </h4>
+                    <a class="one-book__item-link" href="#">
+                      <span class="small-text p3-1">Перейти</span>
+                      <svg width="19" height="18" viewBox="0 0 19 18" fill="none" xmlns="http://www.w3.org/2000/svg">
+                        <g id="arrow-left">
+                        <path id="Vector" d="M4.5 9H15" stroke="#89C85F" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"/>
+                        <path id="Vector_2" d="M9.75 14.25L15 9L9.75 3.75" stroke="#89C85F" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"/>
+                        </g>
+                      </svg> 
+                    </a>
+                    
+                  </div>
+                </div>
+          
+                <div class="col one-book__item p-3">
+                  <div class="one-book__item-top d-flex align-items-center justify-content-between">
+                    <h4 class="one-book__item-level">
+                      Уровень 9
+                    </h4>
+                    <a class="one-book__item-link" href="#">
+                      <span class="small-text p3-1">Перейти</span>
+                      <svg width="19" height="18" viewBox="0 0 19 18" fill="none" xmlns="http://www.w3.org/2000/svg">
+                        <g id="arrow-left">
+                        <path id="Vector" d="M4.5 9H15" stroke="#89C85F" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"/>
+                        <path id="Vector_2" d="M9.75 14.25L15 9L9.75 3.75" stroke="#89C85F" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"/>
+                        </g>
+                      </svg> 
+                    </a>
+                    
+                  </div>
+                </div>
+          
+                <div class="col one-book__item p-3">
+                  <div class="one-book__item-top d-flex align-items-center justify-content-between">
+                    <h4 class="one-book__item-level">
+                      Уровень 10
+                    </h4>
+                    <a class="one-book__item-link" href="#">
+                      <span class="small-text p3-1">Перейти</span>
+                      <svg width="19" height="18" viewBox="0 0 19 18" fill="none" xmlns="http://www.w3.org/2000/svg">
+                        <g id="arrow-left">
+                        <path id="Vector" d="M4.5 9H15" stroke="#89C85F" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"/>
+                        <path id="Vector_2" d="M9.75 14.25L15 9L9.75 3.75" stroke="#89C85F" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"/>
+                        </g>
+                      </svg> 
+                    </a>
+                    
+                  </div>
+                </div>
+                
               </div>
             </div>
-            
-        </div>
-        <div class="content-section__inner d-flex">
-            <div class="content-section__wrapper mb-3 mb-md-4 mb-xl-5">
-                <!--=include content/page-name.html -->
-            </div>
-        </div>
-    </div>
+          
+          </div>
+      </div>
+  </div>
 </section>
 
 <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.0/dist/js/bootstrap.bundle.min.js" integrity="sha384-geWF76RCwLtnZ8qwWowPQNguL3RmwHVBC9FhGdlKrxdiJJigb/j/68SIy3Te4Bkz" crossorigin="anonymous"></script>

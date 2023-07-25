@@ -171,12 +171,12 @@
 
     <hr class="w-100">
   </header>
-<section class="page-name content-section">
+<section class="settings content-section">
     <div class="container">
         <div class="container__top d-flex justify-content-between align-items-center">
             <div class="content-section__top">
                 <h2 class="title">
-                Личный кабинет
+                Настройки
                 </h2>
             </div>
             <div class="tomain-block">
@@ -190,9 +190,122 @@
             
         </div>
         <div class="content-section__inner d-flex">
-            <div class="content-section__wrapper mb-3 mb-md-4 mb-xl-5">
-                <!--=include content/page-name.html -->
+            <div class="content-section__wrapper mb-sm-4 mb-xl-5">
+              <div class="settings__top settings-top">
+                <div class="settings__top-items d-flex align-items-center justify-content-between mt-4 mt-md-0 mb-4">
+                  <div class="settings-top__photo d-flex align-items-center gap-3">
+                    <picture class="my-auto">
+                      <source srcset="../images/avatar.webp" type="image/webp" />
+                      <source srcset="../images/avatar.avif" type="image/avif" />
+                      <img src="../images/avatar.png" alt="avatar">
+                    </picture>
+                    <div class="settings-top__photo-btns">
+                      <button class="settings-top__photo-btn change d-inline-block w-100">
+                        Изменить фото
+                      </button>
+                      <button class="settings-top__photo-btn del d-inline-block w-100">
+                        Удалить
+                      </button>
+                    </div>
+                  </div>
+                  <div class="settings-top__info text-end d-none d-sm-block">
+                    <h3 class="settings-top__info-login d-inline-block w-100">
+                      Логин пользователя
+                    </h3>
+                    <span class="settings-top__info-refn small-text d-inline-block w-100">
+                      реф. номер
+                    </span>
+                  </div>
+                </div>
+              </div>
+              <div class="settings__tabs-wrapp">
+                <div class="settings__pers-data pers-data p-2 p-lg-4">
+                  <div class="pers-data__inner px-2 px-sm-3 py-2">
+                    <ul class="pers-data__header-tabs nav nav-tabs gap-2 gap-sm-4">
+                      <li class="pers-data__header-item nav-item">
+                        <a class="pers-data__header-link small-text nav-link active d-flex align-items-center gap-2" href="#">
+                          <div class="pers-data__header-img d-flex align-items-center justify-content-center">
+                            <svg width="16" height="16" viewBox="0 0 16 16" fill="none" xmlns="http://www.w3.org/2000/svg">
+                              <path d="M8.00007 8.00014C9.67665 8.00014 11.0358 6.641 11.0358 4.96443C11.0358 3.28785 9.67665 1.92871 8.00007 1.92871C6.32349 1.92871 4.96436 3.28785 4.96436 4.96443C4.96436 6.641 6.32349 8.00014 8.00007 8.00014Z" stroke="white" stroke-width="1.5" stroke-linecap="round" stroke-linejoin="round"/>
+                              <path d="M13.2154 14.0715C13.2154 11.7219 10.8779 9.82153 8.00002 9.82153C5.12217 9.82153 2.78467 11.7219 2.78467 14.0715" stroke="white" stroke-width="1.5" stroke-linecap="round" stroke-linejoin="round"/>
+                              </svg>
+                              
+                          </div>
+                          Личные данные
+                        </a>
+                      </li>
+                      <li class="pers-data__header-item nav-item">
+                        <a class="pers-data__header-link small-text nav-link d-flex align-items-center gap-2" href="./settings2.html">
+                          <div class="pers-data__header-img d-flex align-items-center justify-content-center">
+                            <svg width="16" height="16" viewBox="0 0 16 16" fill="none" xmlns="http://www.w3.org/2000/svg">
+                              <path d="M4.17505 6.725V5.45C4.17505 3.33987 4.81255 1.625 8.00005 1.625C11.1875 1.625 11.825 3.33987 11.825 5.45V6.725" stroke="#292D32" stroke-width="1.5" stroke-linecap="round" stroke-linejoin="round"/>
+                              <path d="M11.1875 14.3751H4.8125C2.2625 14.3751 1.625 13.7376 1.625 11.1876V9.9126C1.625 7.3626 2.2625 6.7251 4.8125 6.7251H11.1875C13.7375 6.7251 14.375 7.3626 14.375 9.9126V11.1876C14.375 13.7376 13.7375 14.3751 11.1875 14.3751Z" stroke="#292D32" stroke-width="1.5" stroke-linecap="round" stroke-linejoin="round"/>
+                              <path d="M10.5479 10.5502H10.5536" stroke="#292D32" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"/>
+                              <path d="M7.99713 10.5502H8.00286" stroke="#292D32" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"/>
+                              <path d="M5.4466 10.5502H5.45232" stroke="#292D32" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"/>
+                            </svg>              
+                          </div>
+                          Конфенденциальность
+                        </a>
+                      </li>
+                    </ul>
+                    
+                    <form class="pers-data__form" action="#">
+                      <div class="pers-data__form-inner d-flex flex-column flex-sm-row justify-content-sm-between gap-sm-2 gap-lg-4 py-4">
+                        <div class="pers-data__form-block col-sm-6">
+                          <div class="pers-data__form-item">
+                            <label for="n-telegramm" class="pers-data__form-label ssmal-text mb-1">
+                              Ник в Telegram
+                            </label>
+                            <input class="pers-data__form-input ssmal-text w-100 py-2 px-3 border-none" id="n-telegramm" type="text" placeholder="Ваш ник в Telegram">
+                          </div>
+                          <div class="pers-data__form-item">
+                            <label for="n-user" class="pers-data__form-label ssmal-text mb-1">
+                              Никнейм
+                            </label>
+                            <input class="pers-data__form-input ssmal-text w-100 py-2 px-3 border-none" id="n-user" type="text">
+                          </div>
+                          <div class="pers-data__form-item">
+                            <label for="n-money" class="pers-data__form-label ssmal-text mb-1">
+                              Perfect Money
+                            </label>
+                            <input class="pers-data__form-input ssmal-text w-100 py-2 px-3 border-none" id="n-money" type="text">
+                          </div>
+                        </div>
+                        <div class="pers-data__form-block col-sm-6">
+                          <div class="pers-data__form-item">
+                            <label for="n-vk" class="pers-data__form-label ssmal-text mb-1">
+                              Ссылка в Вконтакте
+                            </label>
+                            <input class="pers-data__form-input ssmal-text w-100 py-2 px-3 border-none" id="n-vk" type="text" placeholder="Ваша страница в VK">
+                          </div>
+                          <div class="pers-data__form-item">
+                            <label for="n-tron" class="pers-data__form-label ssmal-text mb-1">
+                              TRON адресс
+                            </label>
+                            <input class="pers-data__form-input ssmal-text w-100 py-2 px-3 border-none" id="n-tron" type="text" placeholder="Ваш TRON адресс">
+                          </div>
+                          <div class="pers-data__form-item">
+                            <label for="n-id" class="pers-data__form-label ssmal-text mb-1">
+                              Player ID
+                            </label>
+                            <input class="pers-data__form-input ssmal-text w-100 py-2 px-3 border-none" id="n-id" type="text" placeholder="Аккаунт">
+                          </div>
+                        </div>
+                      </div>
+                      <button class="pers-data__form-btn btn btn-primary">
+                        Сохранить данные
+                      </button>
+                    </form>
+                  </div>
+                </div>
+            
+              </div>
+              
             </div>
+            
+            
+            
         </div>
     </div>
 </section>
